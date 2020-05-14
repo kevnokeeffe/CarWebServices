@@ -91,7 +91,7 @@ public class CarsFacadeREST extends AbstractFacade<Cars> {
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     // Method to allow the brouser to access the parameters
     public List<Cars> findByCModelAndYear(@PathParam("cModel") String cModel, @PathParam("cYear") int cYear) {
-        return super.findByCModelAndYear(cModel, cYear);
+        return super.findModelAndYear(cModel, cYear);
     }
 
     @Override
